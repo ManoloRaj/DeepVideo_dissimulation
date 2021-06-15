@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>943</width>
+    <height>535</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QApplication{background-image : url(&quot;ME.png&quot;)}
+
+QPushButton#acceuilBut{
+                background : #45e78e;
+                color : rgb(255,255,255);
+                border : 1px solid rgb(255,255,255);
+                border-radius: 1px;
+                font-size : 16px; 
+                width : 10px;
+            }
+QPushButton#acceuilBut:hover{
+                background : rgb(255,255,255);
+                color : #45e78e;
+                border : 1px solid #45e78e;
+                border-radius: 1px;
+   } 
+QPushButton#quitterBut{
+                background : red;
+                color : rgb(255,255,255);
+                border : 1px solid rgb(255,255,255);
+                border-radius: 1px;
+                font-size : 16px; 
+                width : 10px;
+            }
+QPushButton#quitterBut:hover{
+                background : rgb(255,255,255);
+                color : red;
+                border : 1px solid red;
+                border-radius: 1px;
+   }</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="acceuilBut">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>350</y>
+      <width>231</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ACCEUIL</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="quitterBut">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>430</y>
+      <width>231</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color :red
+
+QPushButton:hover{
+                background : rgb(255,255,255);
+                color : red;
+                border : 1px solid red;
+                border-radius: 2px;
+   }</string>
+    </property>
+    <property name="text">
+     <string>Quitter</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>0</y>
+      <width>571</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MV Boli</family>
+      <pointsize>24</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>DEEP STEGANOGRAPHIE VIDEO </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>70</y>
+      <width>381</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MV Boli</family>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>By Manolo RAJAONAH</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>acceuilBut</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>acceuilBtn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>488</x>
+     <y>359</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>697</x>
+     <y>335</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>quitterBut</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>quitterBtn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>479</x>
+     <y>452</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>674</x>
+     <y>445</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>acceuilBtn()</slot>
+  <slot>quitterBtn()</slot>
+ </slots>
+</ui>
