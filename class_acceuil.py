@@ -37,7 +37,7 @@ class AcceuilWindow(QtWidgets.QMainWindow, Ui_AcceuilWindow):
         self.move(self.s.get_width(),0)
         self.resize(200,self.s.get_height())
 
-        self.afficher_dossier = NavigFichiers("/media/manolo/memoire/Fianarana/Preparation memoire master/front-end/desktop/ui manokana/my_video")
+        self.afficher_dossier = NavigFichiers("my_video/")
         self.afficher_dossier.show()
     def quitterBtn(self) :
         print("dsd")
