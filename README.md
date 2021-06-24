@@ -11,4 +11,9 @@ Everything are combine in one Tool :
 -Chart result by Matplotlib
 -Deep learning with Tensorflow 
 
+Prerequisis are :
+-PyQ5 to install you need to tap the following comand : pip install PyQt5
+-Tensorflow with keras backend : pip install Tensorflow
+-Open-cv Python : pip install Python-opencv
+
 Manolo RAJAONAH Develloper
