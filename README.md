@@ -16,7 +16,8 @@ Prerequisis are :
 - Tensorflow with keras backend : pip install Tensorflow
 - Open-cv Python : pip install Python-opencv
 
-Here is the main window of the utility
-<img src="presentation/window.png" width="350" title="hover text">
+Here is the main window of the utility :
+
+<img src="presentation/window.png" width="100%" title="">
 
 Manolo RAJAONAH - Devellopment
