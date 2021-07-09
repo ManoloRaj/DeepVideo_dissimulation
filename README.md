@@ -18,6 +18,6 @@ Prerequisis are :
 
 Here is the main window of the utility :
 
-<img src="presentation/window.png" width="100%" title="">
+<img src="presentation/window.png" width="50%" title="">
 
 Manolo RAJAONAH - Devellopment
