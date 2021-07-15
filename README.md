@@ -20,4 +20,8 @@ Here is the main window of the utility :
 
 <img src="presentation/window.png" width="50%" title="">
 
+All useful parameter are :
+- Flexible utility
+- Secure
+- Safe
 Manolo RAJAONAH - Devellopment
