@@ -74,7 +74,7 @@ class Thread2(QThread):
 
         cap.release()
         out.release()
-        
+        cv2.destroyAllWindows()
         
                 
 

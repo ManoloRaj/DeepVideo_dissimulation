@@ -7,7 +7,7 @@ import os
 from MainWindow import Ui_MainWindow
 from ssim import *
 from matplotlib import pyplot as plt
-from pylab import *
+
 
 #All libraries about video - audio
 import sounddevice as sd
@@ -26,6 +26,12 @@ from record_cover import *
 from record_secret import *
 
 from plot_graph import *
+
+from add_noise import *
+
+from scipy import ndimage, misc
+
+from pylab import *
 
 class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self, *args, obj=None, **kwargs):
@@ -63,7 +69,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def merge_secret(self):
         os.system("ffmpeg -i my_video/secret.avi -i my_video/secret.wav -c:v copy -c:a aac my_video/finale_secret.avi")
 
-    
+    def deep_amelioration(self):
+        print ("rien")
 
     def fenetre1(self):
         self.player = VideoPlayer()
@@ -81,4 +88,9 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def compute_ssim(self):
         self.graph = MatPlotResult()
         self.graph.show()
+
+    def noising(self):
+        print("noising video")
+        self.add_noise = compute_video_noise(self.comboBox.currentText(), self.lcdNumber.intValue()/100)
         
+  

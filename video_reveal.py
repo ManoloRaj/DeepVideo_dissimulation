@@ -69,7 +69,7 @@ model=load_model(args["model"],compile=False)
 vidcap = cv2.VideoCapture(args["container_video"])
 
 # Start video decoding
-print("\nDecoding video ...\n")
+print("\n Decoding video ...\n")
 
 # Total secret video frames
 num_frames = int(vidcap.get(cv2.CAP_PROP_FRAME_COUNT))
